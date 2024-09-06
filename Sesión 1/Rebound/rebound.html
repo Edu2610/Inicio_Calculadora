@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <p>Hora: <span id="hora">10:45</span></p>
+      </div>
+
+      <div>
+        <p>Fecha: <span id="fecha">30-12-2024</span></p>
+      </div>
+    </div>
+
+    <div>
+      <h2>El vuelo mas proximo:</h2>
+      <p>Numero de vuelo: <span id="vuelo">123456</span></p>
+      <p id="terminal">Terminal: 4</p>
+    </div>
+    **
+    <script>
+      //Seleccionar los elementos
+      let hora = document.querySelector("#hora");
+      let fecha = document.querySelector("#fecha");
+      let vuelo = document.querySelector("#vuelo");
+      let terminal = document.querySelector("#terminal");
+      //Crear fecha y hora
+      let now = new Date();
+      let date = 
+        now.getDate() + "-" + (now.getMonth() + 1) + "-" + now.getFullYear();
+        //getDate obtiene el dia - getMonth obtiene el mes - getFullYear obtiene el año
+      let hours = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+      //El getHours obtiene la hora-getMinutes obtiene Minutos-getSeconds obtiene segundos
+      hora.innerHTML = hours;
+      fecha.innerHTML = date;
+
+      //Numero de terminal
+      let numero_terminal = Math.floor(Math.random() * 11);
+      terminal.innerHTML = "Terminal: " + numero_terminal;
+
+      //Numero de vuelo
+      let vuelo_numero = Math.floor(Math.random() * 9000 ) + 1000 ;
+      vuelo.innerHTML = vuelo_numero+"-0";
+    </script>
+  </body>
+</html>

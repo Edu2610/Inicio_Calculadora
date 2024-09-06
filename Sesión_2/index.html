@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="visor_calculadora" id="visor_calculadora">
+            <p id="visor_calculadora__calculo" style="font-size: 2rem;">
+                0
+            </p>
+        </div>
+
+        <div class="teclado_calculadora" id="teclado_calculadora">
+            <button id="btn+" onclick="agregarvisorop('+')">+</button>
+            <button id="btn-"  onclick="agregarvisorop('-')">-</button>
+            <button id="btn*" onclick="agregarvisorop('*')">*</button>
+            <button id="btndiv" onclick="agregarvisorop('/')">/</button>
+            <button id="btn7" onclick="agregarvisor('7')">7</button>
+            <button id="btn8" onclick="agregarvisor('8')">8</button>
+            <button id="btn9" onclick="agregarvisor('9')">9</button>
+            <button id="btneq" onclick="calcular()">=</button>
+            <button id="btn4" onclick="agregarvisor('4')">4</button>
+            <button id="btn5" onclick="agregarvisor('5')">5</button>
+            <button id="btn6" onclick="agregarvisor('6')">6</button>
+            <button id="btn1" onclick="agregarvisor('1')">1</button>
+            <button id="btn2" onclick="agregarvisor('2')">2</button>
+            <button id="btn3" onclick="agregarvisor('3')">3</button>
+            <button id="btn0" onclick="agregarvisor('0')">0</button>
+            <button id="btnpt" onclick="agregarvisor('.')">.</button>
+            <button id="btnerase" onclick="borrar('')">AC</button>
+            
+        </div>
+
+
+    </main>
+
+
+
+
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>

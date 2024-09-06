@@ -1,0 +1,45 @@
+.teclado_calculadora{
+    background-color: rgb(213, 210, 210);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1rem;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+button{
+    font-size: 2rem;
+    background-color: rgb(27, 26, 26);
+    color: white;
+    text-align: center;
+}
+
+
+#btn1{
+    grid-row: 4/4;
+    grid-column: 1/1;
+}
+
+#btn2{
+    grid-row: 4/4;
+    grid-column: 2/2;
+}
+#btn3{
+    grid-row: 4/4;
+    grid-column: 3/3 ;
+}
+
+#btneq{
+    grid-row: 2/6;
+    grid-column: 4/4;
+}
+
+#btndiv{
+    grid-row: 1/1;
+    grid-column: 4/4;
+}
+
+#btnerase{
+    background-color: rgba(195, 12, 12, 0.741);
+}
